@@ -294,84 +294,33 @@
     <!-- End Values Section --> --}}
 
     <!-- ======= Testimonials Section ======= -->
-    {{-- <section id="testimonials" class="testimonials">
+     <section id="testimonials" class="testimonials">
       <div class="container position-relative" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-white text-center ">Success Story</h1>
 
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+                <div class="four col-md-4">
+                    <div class="counter-box colored"> <i class="bi bi-people-fill"></i> <span class="counter">1500</span>
+                        <p>Women who have Benefited from us</p>
+                    </div>
+                </div>
+                <div class="four col-md-4">
+                    <div class="counter-box"> <i class="bi bi-person"></i> <span class="counter">2500</span>
+                        <p>Teenage and Adolescent Girls who have benefited from us</p>
+                    </div>
+                </div>
+                <div class="four col-md-4">
+                    <div class="counter-box"> <i class="bi bi-people-fill"></i> <span class="counter">200</span>
+                        <p>Women living with disability who have benefited from us</p>
+                    </div>
+                </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
+            </div>
         </div>
-
-      </div>
+          </div>
     </section>
-    <!-- End Testimonials Section --> --}}
+
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -528,7 +477,6 @@
     <!-- ======= Donate Section ======= -->
      <section id="team" class="team section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2 data-aos="fade-up">Donate</h2>
           <p data-aos="fade-up">Take action:<br>
@@ -544,7 +492,7 @@
 
         <div class="row">
 
-         <center>
+         {{-- <center>
             <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
                 <div class="member">
                   <div class="member-img">
@@ -564,7 +512,7 @@
                 </div>
               </div>
 
-         </center>
+         </center> --}}
 
 
         </div>
@@ -639,15 +587,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="/vendor/aos/aos.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/vendor/php-email-form/validate.js"></script>
-  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{ asset('/vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ asset('/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ asset('/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="/js/main.js"></script>
+  <script src="{{ asset('/js/main.js') }}"></script>
 
 </body>
 

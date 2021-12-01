@@ -945,6 +945,54 @@ section {
   background-size: cover;
   position: relative;
 }
+.testimonials .container {
+    margin-top: 100px
+}
+
+.testimonials .counter-box {
+    display: block;
+    background: #f6f6f6;
+    padding: 40px 20px 37px;
+    border-radius: 50px;
+    text-align: center
+}
+
+.testimonials .counter-box p {
+    margin: 5px 0 0;
+    padding: 0;
+    color: #909090;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.testimonials .counter-box i {
+    font-size: 60px;
+    margin: 0 0 15px;
+    border-radius: 50px;
+    color: #d2d2d2
+}
+
+.testimonials .counter {
+    display: block;
+    font-size: 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #666;
+    line-height: 28px
+}
+
+.testimonials .counter-box.colored {
+    background: #3acf87
+
+}
+
+.testimonials .counter-box.colored p,
+.testimonials .counter-box.colored i,
+.testimonials .counter-box.colored .counter {
+    color: #fff
+}
+
 
 .testimonials::before {
   content: "";

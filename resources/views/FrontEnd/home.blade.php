@@ -36,16 +36,21 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="/vendor/aos/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"  href="/vendor/bootstrap/css/bootstrap.min.css"/>
-    <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{{ asset('/vendor/aos/aos.css') }}"rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css') }}"/>
+    <link href="{{ asset('/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+    <script src="{{ asset('/js/counter.js') }}"></script>
+
+
 
     <!--  Main CSS File -->
-    <link rel="stylesheet" type="text/css"  href="/css/styless.css"/>
-@endsection
+    <link rel="stylesheet" type="text/css"  href="{{ asset('/css/styless.css') }}"/>
+
 
 @section('navbar')
 <header id="header" class="d-flex align-items-center">
