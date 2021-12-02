@@ -986,6 +986,11 @@ section {
     background: #3acf87
 
 }
+.testimonials .counter-box.red {
+    background: #f51313;
+
+
+}
 
 .testimonials .counter-box.colored p,
 .testimonials .counter-box.colored i,

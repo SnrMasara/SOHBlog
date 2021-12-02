@@ -296,22 +296,23 @@
     <!-- ======= Testimonials Section ======= -->
      <section id="testimonials" class="testimonials">
       <div class="container position-relative" data-aos="fade-up">
-        <div class="container">
+        <div class="container" id="counter">
             <div class="row">
-                <h1 class="text-white text-center ">Success Story</h1>
+                <h1 class="text-white text-center ">Success Stories</h1>
 
                 <div class="four col-md-4">
-                    <div class="counter-box colored"> <i class="bi bi-people-fill"></i> <span class="counter">1500</span>
+                    <div class="counter-box colored"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="1500"></span>
                         <p>Women who have Benefited from us</p>
                     </div>
                 </div>
+
                 <div class="four col-md-4">
-                    <div class="counter-box"> <i class="bi bi-person"></i> <span class="counter">2500</span>
+                    <div class="counter-box"> <i class="bi bi-person"></i> <span class="counter" data-count="2500"></span>
                         <p>Teenage and Adolescent Girls who have benefited from us</p>
                     </div>
                 </div>
                 <div class="four col-md-4">
-                    <div class="counter-box"> <i class="bi bi-people-fill"></i> <span class="counter">200</span>
+                    <div class="counter-box red"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="200"></span>
                         <p>Women living with disability who have benefited from us</p>
                     </div>
                 </div>
@@ -343,6 +344,7 @@
               <li data-filter=".filter-lad">Legal Aid Clinic</li>
               <li data-filter=".filter-staff">Staff</li>
               <li data-filter=".filter-clip">videos</li>
+              <li data-filter=".filter-other">Others</li>
             </ul>
           </div>
         </div>
@@ -467,6 +469,71 @@
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-empowernment">
+            <img src="/public/img/portfolio/p1.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Empowerment</h4>
+              <p>Football for change. Creating safe spaces</p>
+              <a href="/public/img/p1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-empowernment">
+            <img src="/public/img/portfolio/p2.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Empowerment</h4>
+              <p>#GirlsCan</p>
+              <a href="/public/img/p2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-empowernment">
+            <img src="/public/img/portfolio/p3.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Empowerment</h4>
+              <p>#WomenForWomen</p>
+              <a href="/public/img/p3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-empowernment">
+            <img src="/public/img/portfolio/p4.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Empowerment</h4>
+              <p>#WomenForWomen</p>
+              <a href="/public/img/p4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-awareness">
+            <img src="/public/img/portfolio/p5.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Awareness</h4>
+
+              <a href="/public/img/p5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-other">
+            <img src="/public/img/portfolio/p6.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Our Office</h4>
+
+              <a href="/public/img/p6.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">
+                <i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+
+
+
 
 
         </div>
