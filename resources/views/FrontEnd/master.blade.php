@@ -554,7 +554,12 @@
             <p data-aos="fade-up">...for input  to economic empowerment for women,</p>
             <p data-aos="fade-up">..for supporting and capacity building women to actively participate in leadership and decisions making processes.</p>
 
-            <p data-aos="fade-up"> Donate today to help put a smile on someone.</p>
+            <p data-aos="fade-up"> Donate today to help put a smile on someone.</p> <br> <br>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3>To Donate, Call this number</h3>
+                <p>+254 731 964 556</p>
+              </div>
+            </div>
         </div>
 
         <div class="row">
