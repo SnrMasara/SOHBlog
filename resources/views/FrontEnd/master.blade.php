@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 @yield('header')
+<style>
+#white{
+    background-color: #f11c1c
+
+}
+</style>
 </head>
 <body>
 
@@ -312,7 +318,7 @@
                     </div>
                 </div>
                 <div class="four col-md-4">
-                    <div class="counter-box red"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="200"></span>
+                    <div class="counter-box" id="white"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="200"></span>
                         <p>Women living with disability who have benefited from us</p>
                     </div>
                 </div>
