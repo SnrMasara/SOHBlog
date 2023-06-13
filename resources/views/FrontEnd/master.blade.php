@@ -20,7 +20,7 @@
       </div>
 
       <div class="cta d-none d-md-flex align-items-center">
-        <a href="/blog">Our Blog</a>
+        <a href="/blog">Our Blog Section</a>
       </div>
     </div>
   </section>
@@ -36,7 +36,7 @@
       <h2>Safeguarding the future by ensuring equal rights and opportunities for girls and women.</h2>
       <div class="d-flex align-items-center">
         <i class="bx bxs-right-arrow-alt get-started-icon"></i>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#about" class="btn-get-started scrollto">Know Us Better </a>
       </div>
     </div>
   </section>
@@ -45,7 +45,7 @@
   <main id="main">
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="why-us" class="why-us">gc
       <div class="container">
 
         <div class="row">
@@ -53,7 +53,7 @@
             <div class="content">
               <h3>Our Mission</h3>
               <p>
-                Our Mission as seeds of hope Kenya is to work with women in all our diversity to realize their potential and
+                Our Mission as seeds of Hope Kenya is to work with women in all our diversity to realize their potential and
                 rights in a bid to achieve sustainable development.
               </p>
               <div class="text-center">
@@ -68,9 +68,9 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-analyse"></i>
                     <h4> Adolescent Girls and Young Women (AGYWs)</h4>
-                    <p>Adolescent and young girls are often left out without a voice or control of their own bodies.
-                        They face issues of gender based violence and have limited access to healthcare and education.
-                        Seeds of hope Kenya works with them at the grassroots to brigde this gap.</p>
+                    <p>Seeds of Hope Kenya is dedicated to empowering adolescent girls and young women (AGYWs) in Kisii County and Nyamira County, 
+                      providing them with a voice, control over their bodies, and opportunities for education and healthcare. 
+                      We work at the grassroots level to address gender-based violence, promote women's rights, and foster their economic empowerment for a brighter future.</p>
                   </div>
                 </div>
                 <div class="col-xl-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
@@ -78,10 +78,9 @@
                     <i class="bx bx-certification"></i>
                     <h4>Sexual and Reproductive Health and Rights (SRHR)</h4>
                     <p>Women have the right to decide freely and responsibly on matters related to sexuality.
-                        They must be informed and empowered to protect themselves from STIs,
-                        decide how many children to have and when, and also be self-aware on Menstrual hygiene matters.
-                        Seeds of hope Kenya works hand in hand with not only the local authorities but also other stakeholders
-                        to ensure that women are well informaed and also empowered.
+                      We work collaboratively with local authorities and stakeholders to ensure women are well-informed and 
+                      empowered to make decisions about their sexuality, protect themselves from STIs, exercise family planning choices, 
+                      and maintain proper menstrual hygiene. Discover how Seeds of Hope Kenya is transforming women's lives through SRHR education and empowerment.
                     </p>
                   </div>
                 </div>
@@ -89,17 +88,20 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-arch"></i>
                     <h4>Sexual and Gender Based Violence</h4>
-                    <p>Violence against women and girls is a human rights violation. Physical, mental or sexual,
-                        women deserve dignity.
-                        Therefore, seeds of hope Kenya works with other stakeholders to ensure justice and equality for all.</p>
+                    <p>We firmly believe that violence against women and girls is a human rights violation and work tirelessly to promote justice, 
+                      equality, and dignity for all. By providing support services to survivors, raising awareness, and collaborating with stakeholders, 
+                      we strive to create a society where SGBV is eradicated, and women and girls can live their lives without fear. 
+                      Join us in our mission to create safer communities and ensure a future where everyone is treated with respect and equality.</p>
                   </div>
                 </div>
                 <div class="col-xl-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon-box mt-4 mt-xl-0">
                       <i class="bx bx-shield"></i>
                       <h4>Women in Leadership</h4>
-                      <p>Seeds of hope Kenya encourages and supports women so that they can actively participate in leadership and decision making
-                          processes at all levels in the society.  </p>
+                      <p>Seeds of Hope Kenya is dedicated to promoting women's empowerment in leadership and decision-making processes in 
+                        Kisii County and Nyamira County. We firmly believe that when women are empowered to lead, societies flourish and become more inclusive. 
+                        Through our programs and initiatives, we support women in developing their leadership skills, encouraging their political participation, 
+                        and fostering their leadership in community development. </p>
                     </div>
                   </div>
               </div>
@@ -121,9 +123,13 @@
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h2 data-aos="fade-up">About us</h2>
-            <p data-aos="fade-up">Seeds of hope Kenya is an organization with a key focus of empowering the vulnerable women,
-                 youth and girls in our communities at the grassroots with a vision of eradicating poverty and
-                  ensuring sustainable development.
+            <p data-aos="fade-up">Seeds of Hope Kenya is dedicated to empowering vulnerable women, youth, and girls in Kisii County and Nyamira County. 
+              With a clear vision of eradicating poverty and achieving sustainable development, we provide opportunities, education, and support to uplift 
+              communities at the grassroots level. By promoting gender equality, education, economic empowerment, and human rights, 
+              we strive to create a brighter future where individuals can thrive and contribute to their communities. Join us in our mission to empower and 
+              transform lives for a more equitable and prosperous society.
+
+
             </p>
 
             <div class="icon-box" data-aos="fade-up">
@@ -167,10 +173,9 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-    </section>
-    <!-- End Clients Section --> --}}
+    </section> --}}
+    <!-- End Clients Section -->
 
     <!-- ======= Programmes Section ======= -->
     <section id="services" class="services section-bg">
@@ -186,8 +191,8 @@
         </div>
 
         <div class="row" >
-        <div class="col-md-6 col-md-4 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <div class="icon-box mt-4 mt-xl-0">
+        <div class="col-sm-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
               <div class="icon"><i class="bi bi-vr"></i></div>
               <h4 class="title"><a href="" id="programes1">Gender based Violence</a></h4>
               <p class="description">Seeds of hope Kenya supports community based dialogues aimed at changing social and cultural perceptions,
@@ -206,8 +211,6 @@
             </p>
             </div>
           </div>
-        </div>
-        <div class="row">
           <div class=" col-sm-6  d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-card-checklist"></i></div>
@@ -216,7 +219,7 @@
              We also ensure that they are given knowledge on issues of menstrual hygiene, body anatomy changes and what it means to them.</p>
             </div>
           </div>
-          <div class=" col-sm-6  d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class=" col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-tag"></i></div>
               <h4 class="title"><a href="" id="programes4">Women Leadership and Participation in Decision Making Processes</a></h4>
@@ -224,14 +227,16 @@
                   We work with other stakeholders to domesticate the convention to eliminate all forms of discrimination against women.</p>
             </div>
           </div>
-          {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-sm-12 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-binoculars"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4 class="title"><a href="">Gender and Sexual Minorities</a></h4>
+              <p class="description">We strive to create a world where everyone is respected, accepted, and celebrated for who they are. 
+                As a grassroots gender and human rights organization, we believe in the inherent dignity and worth of every individual, regardless of their gender identity or sexual orientation. 
+                In this platform, we shed light on the experiences of gender and sexual minorities, raise awareness about their rights, and emphasize the importance of fostering an inclusive and supportive society.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-brightness-high"></i></div>
               <h4 class="title"><a href="">Nemo Enim</a></h4>
@@ -245,59 +250,97 @@
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div> --}}
-        </div>
+       </div>
+      </div>
 
       </div>
     </section>
     <!-- End Services Section -->
-
-    <!-- ======= Values Section ======= -->
-    {{-- <section id="values" class="values">
+   
+    <!-- ======= Leadership Section ======= -->
+    <section id="values" class="values">
       <div class="container">
-
+        <div class="section-title" data-aos="fade-up">
+          <h2>Leadership</h2>
+          <p>At Seeds of Hope Kenya, we are privileged to have a dedicated and visionary team of leaders who drive our mission of empowering 
+            vulnerable communities and promoting sustainable development. Our company leaders are committed to creating positive change by championing gender 
+            equality, education, economic empowerment, and human rights. With their expertise, passion, and relentless pursuit of social justice, 
+            they inspire our organization to make a meaningful impact in Kisii County and Nyamira County. Get to know the inspiring individuals who guide 
+            Seeds of Hope Kenya on its journey towards a brighter and more inclusive future.
+          </p>
+        </div>
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="col-md-12 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card" style="background-image: url(assets/img/values-1.jpg);">
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Mission</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="card" style="background-image: url(assets/img/values-2.jpg);">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Plan</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
 
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card" style="background-image: url(assets/img/values-3.jpg);">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Vision</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card" style="background-image: url(assets/img/values-4.jpg);">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Care</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
+              <div class='row'>
+                <div class="col-md-6">
+                <h3 class="card-title"><a href="">Our Director</a></h3>
+                <img src="../img/Leader.jpeg" style="border-radius: 10%" height="300" width="300" alt="seeds of hope Kenya">
+                <h5 class="card-text">Ruth Manoti</h5>
 
+                 <p class="card-text">Ruth Manoti is an esteemed gender and human rights activist, widely recognized for her unwavering commitment to social justice. 
+                    With a Bachelor's degree in Communication and currently pursuing her Master's in Development Studies, she possesses a solid academic foundation in 
+                    the fields of communication and development.</p>
+                    <p class="card-text">Ruth has also undergone specialized training in leadership and management, 
+                    equipping her with the skills necessary to effectively lead and advocate for change. 
+                    Her passion for promoting women's participation in leadership positions led her to be nominated as a candidate for the 2022 General Election in Kenya, 
+                    representing a political party.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="card-text">Dedicated to empowering women, Ruth has consistently dedicated her efforts to uplift grassroots communities. 
+                    She has actively worked to improve the lives of women and girls, recognizing the importance of their empowerment for societal progress. 
+                    As a member of the Lake Region Economic Block Human Rights under KHRC, she contributes to the advancement of human rights in the region. 
+                    Additionally, Ruth serves as the Secretary to the founding members of KETI (Kisii Endelevu Trust Initiative), 
+                    an umbrella organization that brings together civil society organizations in Kisii, with support from USAID and the Aga Khan Foundation. </p>
+                    <p class="card-text">Ruth's involvement extends to various gender-focused working groups, where she contributes her expertise and insights.  
+                    She has been an active member of the Gender Technical Working Group in Kisii County, Kenya, advocating for gender equality and women's rights. Furthermore, she has also been a valuable member of the HIV/AIDS Gender Technical Working Group, working to address the unique challenges faced by women in relation to HIV/AIDS. 
+                    Passionate about sustainable development, Ruth envisions a future where communities can thrive while preserving the environment and promoting social equity.</p>
+                    <p class="card-text">Her drive for sustainable development is rooted in her belief that long-term progress is only achievable when it is i nclusive and considers the well-being of 
+                    all individuals. As the founding director of Seeds Of Hope Kenya, Ruth Manoti brings her extensive experience, expertise, 
+                    and deep-rooted passion to lead the organization. With her visionary leadership and unwavering dedication to advancing gender equality, 
+                    human rights, and sustainable development, she is at the forefront of fostering positive change within grassroots communities.</p>
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>  
       </div>
     </section>
-    <!-- End Values Section --> --}}
+    <!-- End Values Section -->
+    <section class="section section-default mt-none mb-none">
+        <div class="container">
+        <h2 class="mb-sm">Our <strong>Partners</strong></h2>
+        <strong>
+        <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="square-holder">
+        <img alt="" src="../img/partner/1.jpeg"/>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="square-holder">
+        <img alt="" src="../img/partner/2.jpeg"/>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="square-holder">
+        <img alt="" src="../img/partner/3.jpeg"/>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="square-holder">
+        <img alt="" src="../img/partner/4.jpeg"/>
+        </div>
+        </div>
+        </div>
+        </strong>
+        </div>
+        </section>
 
     <!-- ======= Testimonials Section ======= -->
      <section id="testimonials" class="testimonials">
@@ -307,18 +350,18 @@
                 <h1 class="text-white text-center ">Success Stories</h1>
 
                 <div class="four col-md-4">
-                    <div class="counter-box colored"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="1500"></span>
+                    <div class="counter-box colored"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="1925"></span>
                         <p>Women who have Benefited from us</p>
                     </div>
                 </div>
 
                 <div class="four col-md-4">
-                    <div class="counter-box"> <i class="bi bi-person"></i> <span class="counter" data-count="2500"></span>
+                    <div class="counter-box"> <i class="bi bi-person"></i> <span class="counter" data-count="2565"></span>
                         <p>Teenage and Adolescent Girls who have benefited from us</p>
                     </div>
                 </div>
                 <div class="four col-md-4">
-                    <div class="counter-box" id="white"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="200"></span>
+                    <div class="counter-box" id="white"> <i class="bi bi-people-fill"></i> <span class="counter" data-count="283"></span>
                         <p>Women living with disability who have benefited from us</p>
                     </div>
                 </div>

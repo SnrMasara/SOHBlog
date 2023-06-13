@@ -380,6 +380,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -120px;
 }
 
+.square-holder {
+  padding:30px;
+  border: 1px solid #cecece;
+  align-items: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:20px;
+  background-color:#f1f1f1;
+  min-height:200px
+}
+
+.square-holder img {
+  max-width:50%;
+  max-height: 50%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.square-holder:hover img{
+  filter:none;
+}
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
