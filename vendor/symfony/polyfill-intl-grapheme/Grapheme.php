@@ -11,7 +11,7 @@
 
 namespace Symfony\Polyfill\Intl\Grapheme;
 
-\define('SYMFONY_GRAPHEME_CLUSTER_RX', \PCRE_VERSION >= '8.32' ? '\X' : Grapheme::GRAPHEME_CLUSTER_RX);
+\define('SYMFONY_GRAPHEME_CLUSTER_RX', ((float) \PCRE_VERSION < 10 ? (float) \PCRE_VERSION >= 8.32 : (float) \PCRE_VERSION >= 10.39) ? '\X' : Grapheme::GRAPHEME_CLUSTER_RX);
 
 /**
  * Partial intl implementation in pure PHP.
@@ -26,6 +26,7 @@ namespace Symfony\Polyfill\Intl\Grapheme;
  * - grapheme_strrpos  - Find position (in grapheme units) of last occurrence of a string
  * - grapheme_strstr   - Returns part of haystack string from the first occurrence of needle to the end of haystack
  * - grapheme_substr   - Return part of a string
+ * - grapheme_str_split - Splits a string into an array of individual or chunks of graphemes
  *
  * @author Nicolas Grekas <p@tchwork.com>
  *
@@ -48,7 +49,7 @@ final class Grapheme
             $start = \strlen($s) + $start;
         }
 
-        if (!is_scalar($s)) {
+        if (!\is_scalar($s)) {
             $hasError = false;
             set_error_handler(function () use (&$hasError) { $hasError = true; });
             $next = substr($s, $start);
@@ -189,6 +190,37 @@ final class Grapheme
     public static function grapheme_strstr($s, $needle, $beforeNeedle = false)
     {
         return mb_strstr($s, $needle, $beforeNeedle, 'UTF-8');
+    }
+
+    public static function grapheme_str_split($s, $len = 1)
+    {
+        if (0 > $len || 1073741823 < $len) {
+            if (80000 > \PHP_VERSION_ID) {
+                return false;
+            }
+
+            throw new \ValueError('grapheme_str_split(): Argument #2 ($length) must be greater than 0 and less than or equal to 1073741823.');
+        }
+
+        if ('' === $s) {
+            return [];
+        }
+
+        if (!preg_match_all('/('.SYMFONY_GRAPHEME_CLUSTER_RX.')/u', $s, $matches)) {
+            return false;
+        }
+
+        if (1 === $len) {
+            return $matches[0];
+        }
+
+        $chunks = array_chunk($matches[0], $len);
+
+        foreach ($chunks as &$chunk) {
+            $chunk = implode('', $chunk);
+        }
+
+        return $chunks;
     }
 
     private static function grapheme_position($s, $needle, $offset, $mode)

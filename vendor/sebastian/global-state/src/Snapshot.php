@@ -9,6 +9,7 @@
  */
 namespace SebastianBergmann\GlobalState;
 
+use const PHP_VERSION_ID;
 use function array_keys;
 use function array_merge;
 use function array_reverse;
@@ -100,7 +101,7 @@ class Snapshot
     /**
      * Creates a snapshot of the current global state.
      */
-    public function __construct(ExcludeList $excludeList = null, bool $includeGlobalVariables = true, bool $includeStaticAttributes = true, bool $includeConstants = true, bool $includeFunctions = true, bool $includeClasses = true, bool $includeInterfaces = true, bool $includeTraits = true, bool $includeIniSettings = true, bool $includeIncludedFiles = true)
+    public function __construct(?ExcludeList $excludeList = null, bool $includeGlobalVariables = true, bool $includeStaticAttributes = true, bool $includeConstants = true, bool $includeFunctions = true, bool $includeClasses = true, bool $includeInterfaces = true, bool $includeTraits = true, bool $includeIniSettings = true, bool $includeIncludedFiles = true)
     {
         $this->excludeList = $excludeList ?: new ExcludeList;
 
@@ -137,7 +138,9 @@ class Snapshot
             $this->includedFiles = get_included_files();
         }
 
-        $this->traits = get_declared_traits();
+        if ($includeTraits) {
+            $this->traits = get_declared_traits();
+        }
     }
 
     public function excludeList(): ExcludeList
@@ -312,7 +315,14 @@ class Snapshot
                         continue;
                     }
 
-                    $attribute->setAccessible(true);
+                    if (version_compare(PHP_VERSION, '8.1.0', '<')) {
+                        $attribute->setAccessible(true);
+                    }
+
+                    if (PHP_VERSION_ID >= 70400 && !$attribute->isInitialized()) {
+                        continue;
+                    }
+
                     $value = $attribute->getValue();
 
                     if ($this->canBeSerialized($value)) {

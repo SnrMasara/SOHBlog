@@ -62,15 +62,11 @@ if (extension_loaded('mbstring')) {
         function iconv_substr($string, $offset, $length = 2147483647, $encoding = null) { null === $encoding && $encoding = p\Iconv::$internalEncoding; return mb_substr($string, $offset, $length, $encoding); }
     }
     if (!function_exists('iconv_mime_decode')) {
-        function iconv_mime_decode($string, $mode = 0, $encoding = null) { null === $encoding && $encoding = p\Iconv::$internalEncoding; return mb_decode_mimeheader($string, $mode, $encoding); }
+        function iconv_mime_decode($string, $mode = 0, $encoding = null) { $currentMbEncoding = mb_internal_encoding(); null === $encoding && $encoding = p\Iconv::$internalEncoding; mb_internal_encoding($encoding); $decoded = mb_decode_mimeheader($string); mb_internal_encoding($currentMbEncoding); return $decoded; }
     }
 } else {
     if (!function_exists('iconv_strlen')) {
-        if (extension_loaded('xml')) {
-            function iconv_strlen($string, $encoding = null) { return p\Iconv::strlen1($string, $encoding); }
-        } else {
-            function iconv_strlen($string, $encoding = null) { return p\Iconv::strlen2($string, $encoding); }
-        }
+        function iconv_strlen($string, $encoding = null) { return p\Iconv::iconv_strlen($string, $encoding); }
     }
 
     if (!function_exists('iconv_strpos')) {

@@ -3,7 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
- * (c) 2012-2020 Justin Hileman
+ * (c) 2012-2025 Justin Hileman
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -11,6 +11,7 @@
 
 namespace Psy\Readline;
 
+use Psy\ConfigPaths;
 use Psy\Util\Str;
 
 /**
@@ -25,14 +26,12 @@ use Psy\Util\Str;
  */
 class Libedit extends GNUReadline
 {
-    private $hasWarnedOwnership = false;
+    private bool $hasWarnedOwnership = false;
 
     /**
      * Let's emulate GNU Readline by manually reading and parsing the history file!
-     *
-     * @return bool
      */
-    public static function isSupported()
+    public static function isSupported(): bool
     {
         return \function_exists('readline') && !\function_exists('readline_list_history');
     }
@@ -40,8 +39,20 @@ class Libedit extends GNUReadline
     /**
      * {@inheritdoc}
      */
-    public function listHistory()
+    public static function supportsBracketedPaste(): bool
     {
+        return false;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function listHistory(): array
+    {
+        if ($this->historyFile === false) {
+            return [];
+        }
+
         $history = \file_get_contents($this->historyFile);
         if (!$history) {
             return [];
@@ -57,6 +68,7 @@ class Libedit extends GNUReadline
 
         // decode the line
         $history = \array_map([$this, 'parseHistoryLine'], $history);
+
         // filter empty lines & comments
         return \array_values(\array_filter($history));
     }
@@ -64,7 +76,7 @@ class Libedit extends GNUReadline
     /**
      * {@inheritdoc}
      */
-    public function writeHistory()
+    public function writeHistory(): bool
     {
         $res = parent::writeHistory();
 
@@ -75,7 +87,7 @@ class Libedit extends GNUReadline
         if ($res === false && !$this->hasWarnedOwnership) {
             if (\is_file($this->historyFile) && \is_writable($this->historyFile)) {
                 $this->hasWarnedOwnership = true;
-                $msg = \sprintf('Error writing history file, check file ownership: %s', $this->historyFile);
+                $msg = \sprintf('Error writing history file, check file ownership: %s', ConfigPaths::prettyPath($this->historyFile));
                 \trigger_error($msg, \E_USER_NOTICE);
             }
         }
@@ -93,11 +105,11 @@ class Libedit extends GNUReadline
      *
      * @return string|null
      */
-    protected function parseHistoryLine($line)
+    protected function parseHistoryLine(string $line)
     {
         // empty line, comment or timestamp
         if (!$line || $line[0] === "\0") {
-            return;
+            return null;
         }
         // if "\0" is found in an entry, then
         // everything from it until the end of line is a comment.

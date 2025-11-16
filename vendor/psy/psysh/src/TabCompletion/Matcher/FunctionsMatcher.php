@@ -3,7 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
- * (c) 2012-2020 Justin Hileman
+ * (c) 2012-2025 Justin Hileman
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,7 +23,7 @@ class FunctionsMatcher extends AbstractMatcher
     /**
      * {@inheritdoc}
      */
-    public function getMatches(array $tokens, array $info = [])
+    public function getMatches(array $tokens, array $info = []): array
     {
         $func = $this->getInput($tokens);
 
@@ -38,13 +38,13 @@ class FunctionsMatcher extends AbstractMatcher
     /**
      * {@inheritdoc}
      */
-    public function hasMatched(array $tokens)
+    public function hasMatched(array $tokens): bool
     {
         $token = \array_pop($tokens);
         $prevToken = \array_pop($tokens);
 
         switch (true) {
-            case self::tokenIs($prevToken, self::T_NEW):
+            case self::hasToken([self::T_NEW, self::T_OBJECT_OPERATOR], $prevToken):
                 return false;
             case self::hasToken([self::T_OPEN_TAG, self::T_STRING], $token):
             case self::isOperator($token):

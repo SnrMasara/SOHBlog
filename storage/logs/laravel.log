@@ -124,3 +124,94 @@
 #63 /home/snrmasara/Projects/SOHBlog/server.php(21): require_once('...')
 #64 {main}
 "} 
+[2025-11-16 18:09:53] production.ERROR: Carbon\Carbon::setLastErrors(): Argument #1 ($lastErrors) must be of type array, false given, called in /home/snrmasara/Projects/SOHBlog/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php on line 98 {"exception":"[object] (TypeError(code: 0): Carbon\\Carbon::setLastErrors(): Argument #1 ($lastErrors) must be of type array, false given, called in /home/snrmasara/Projects/SOHBlog/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php on line 98 at /home/snrmasara/Projects/SOHBlog/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php:928)
+[stacktrace]
+#0 /home/snrmasara/Projects/SOHBlog/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php(98): Carbon\\Carbon::setLastErrors()
+#1 /home/snrmasara/Projects/SOHBlog/vendor/nesbot/carbon/src/Carbon/Traits/Creator.php(252): Carbon\\Carbon->__construct()
+#2 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Support/DateFactory.php(217): Carbon\\Carbon::now()
+#3 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Support\\DateFactory->__call()
+#4 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Scheduling/ScheduleRunCommand.php(73): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#5 [internal function]: Illuminate\\Console\\Scheduling\\ScheduleRunCommand->__construct()
+#6 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Container/Container.php(921): ReflectionClass->newInstanceArgs()
+#7 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Container/Container.php(292): Illuminate\\Container\\Container->build()
+#8 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\\Container\\Container->Illuminate\\Container\\{closure}()
+#9 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#10 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#11 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#12 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#13 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Application.php(262): Illuminate\\Foundation\\Application->make()
+#14 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Application.php(276): Illuminate\\Console\\Application->resolve()
+#15 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(404): Illuminate\\Console\\Application->resolveCommands()
+#16 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Application.php(153): Illuminate\\Support\\ServiceProvider->Illuminate\\Support\\{closure}()
+#17 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Application.php(74): Illuminate\\Console\\Application->bootstrap()
+#18 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(330): Illuminate\\Console\\Application->__construct()
+#19 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#20 /home/snrmasara/Projects/SOHBlog/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#21 {main}
+"} 
+[2025-11-16 18:09:53] production.ERROR: Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home/snrmasara/Projects/SOHBlog/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError()
+#1 /home/snrmasara/Projects/SOHBlog/vendor/composer/ClassLoader.php(571): include()
+#2 /home/snrmasara/Projects/SOHBlog/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#4 /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements()
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}()
+#6 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(717): array_filter()
+#7 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where()
+#8 /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter()
+#9 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable()
+#10 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable()
+#11 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution()
+#12 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write()
+#13 /home/snrmasara/Projects/SOHBlog/vendor/filp/whoops/src/Whoops/Run.php(370): NunoMaduro\Collision\Handler->handle()
+#14 [internal function]: Whoops\Run->handleException()
+#15 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught Whoops\\Exception\\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home/snrmasara/Projects/SOHBlog/vendor/composer/ClassLoader.php(571): Whoops\\Run->handleError()
+#1 /home/snrmasara/Projects/SOHBlog/vendor/composer/ClassLoader.php(571): include()
+#2 /home/snrmasara/Projects/SOHBlog/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements()
+#5 [internal function]: Facade\\Ignition\\SolutionProviders\\SolutionProviderRepository->Facade\\Ignition\\SolutionProviders\\{closure}()
+#6 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(717): array_filter()
+#7 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\\Support\\Arr::where()
+#8 /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\\Support\\Collection->filter()
+#9 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\\Ignition\\SolutionProviders\\SolutionProviderRepository->getSolutionsForThrowable()
+#10 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\\Collision\\Adapters\\Laravel\\IgnitionSolutionsRepository->getFromThrowable()
+#11 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\\Collision\\Writer->renderSolution()
+#12 /home/snrmasara/Projects/SOHBlog/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\\Collision\\Writer->write()
+#13 /home/snrmasara/Projects/SOHBlog/vendor/filp/whoops/src/Whoops/Run.php(370): NunoMaduro\\Collision\\Handler->handle()
+#14 [internal function]: Whoops\\Run->handleException()
+#15 {main}
+  thrown at /home/snrmasara/Projects/SOHBlog/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52)
+[stacktrace]
+#0 {main}
+"} 
+[2025-11-16 18:15:13] local.ERROR: There are no commands defined in the "generate" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"generate\" namespace. at /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php:650)
+[stacktrace]
+#0 /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php(701): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#2 /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run()
+#4 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/snrmasara/Projects/SOHBlog/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2025-11-16 18:15:34] local.ERROR: There are no commands defined in the "key:" namespace.
+
+Did you mean this?
+    key {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"key:\" namespace.
+
+Did you mean this?
+    key at /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php:650)
+[stacktrace]
+#0 /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php(701): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#2 /home/snrmasara/Projects/SOHBlog/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run()
+#4 /home/snrmasara/Projects/SOHBlog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/snrmasara/Projects/SOHBlog/artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
